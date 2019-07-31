@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# CMake folder
+build
+
+# Other
+.DS_Store
+.history_*
+.vscode

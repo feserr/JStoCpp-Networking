@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <p>
+    Address:
+    <input name="address" id="address" type="text" value="127.0.0.1"></p>
+  <p>
+    Port:
+    <input name="port" id="port" type="text" value="9002"></p>
+  <p>
+    Message:
+    <input name="message" id="message" type="text" value="Hello world!"></p>
+  <button onclick="pingWebserver()">Ping webserver</button>
+
+  <p id="HelpMessage"></p>
+  Send the message to the webserver with the given address and port. See the
+  result on the console.
+  <p></p>
+
+  <script>
+    function pingWebserver() {
+      var address = document.getElementById('address').value;
+      var port = document.getElementById('port').value;
+      var connection = new WebSocket('ws://' + address + ':' + port);
+
+      connection.onopen = function () {
+        var message = document.getElementById('message').value;
+        connection.send(message); // Send the message to the server
+      };
+
+      connection.onmessage = function (event) {
+        console.debug("WebSocket message received: ", event.data);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
