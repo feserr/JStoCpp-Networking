@@ -18,7 +18,7 @@ JStoCpp-Networking
 
 Websocket server C++ application that accept and reply to JS websocket.
 
-Version: 0.1 - Released: 31rd July 2019
+Version: 0.1 - Released: 31th July 2019
 
 <a name="whats-new"></a>
 ## What's new in 0.1?
