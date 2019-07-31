@@ -7,17 +7,23 @@ JStoCpp-Networking
 # Index
 
 - [About](#about)
+- [What's New?](#whats-new)
 - [How to Build](#how-to-build)
 - [Contributing](#contributing)
 - [Bugs?](#bugs)
 - [License](#license)
 
 <a name="about"></a>
-# C/C++ playground 0.0.0.3
+# JStoCpp-Networking 0.1
 
-A set C/C++ tests, benchamarks and others.
+Websocket server C++ application that accept and reply to JS websocket.
 
-Version: 0.0.0.3 - Released: 13rd April 2019
+Version: 0.1 - Released: 13rd April 2019
+
+<a name="whats-new"></a>
+## What's new in 0.1?
+
+Initial version.
 
 <a name="how-to-build"></a>
 ## How to Build
